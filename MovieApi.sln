@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8E11C2C6-5278-40D5-8514-7E52D7C5E362}"
 EndProject
@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Domain", "Core\MovieApi.Domain\MovieApi.Domain.csproj", "{1891ADD1-5BA9-42D3-BCD4-49AD7A849845}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Persistence", "Infrastructure\MovieApi.Persistence\MovieApi.Persistence.csproj", "{B801BCBF-7EAF-49DC-8DD6-3867A6B2512C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.WebApi", "Presentation\MovieApi.WebApi\MovieApi.WebApi.csproj", "{CA6DB46C-9BBB-413B-AD1D-EEBDC2CBF2C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +29,21 @@ Global
 		{1891ADD1-5BA9-42D3-BCD4-49AD7A849845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1891ADD1-5BA9-42D3-BCD4-49AD7A849845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1891ADD1-5BA9-42D3-BCD4-49AD7A849845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B801BCBF-7EAF-49DC-8DD6-3867A6B2512C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B801BCBF-7EAF-49DC-8DD6-3867A6B2512C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B801BCBF-7EAF-49DC-8DD6-3867A6B2512C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B801BCBF-7EAF-49DC-8DD6-3867A6B2512C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA6DB46C-9BBB-413B-AD1D-EEBDC2CBF2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6DB46C-9BBB-413B-AD1D-EEBDC2CBF2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6DB46C-9BBB-413B-AD1D-EEBDC2CBF2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6DB46C-9BBB-413B-AD1D-EEBDC2CBF2C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1891ADD1-5BA9-42D3-BCD4-49AD7A849845} = {8E11C2C6-5278-40D5-8514-7E52D7C5E362}
+		{B801BCBF-7EAF-49DC-8DD6-3867A6B2512C} = {153E4C83-3F07-4437-BAFF-6B03DF1BB7FD}
+		{CA6DB46C-9BBB-413B-AD1D-EEBDC2CBF2C0} = {3E265153-F872-4A23-ADF6-54B726DB0850}
 	EndGlobalSection
 EndGlobal
