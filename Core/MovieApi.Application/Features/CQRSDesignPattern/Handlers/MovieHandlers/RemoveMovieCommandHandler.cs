@@ -3,11 +3,11 @@ using MovieApi.Persistence.Context;
 
 namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers
 {
-    public class RemoveMovieHandler
+    public class RemoveMovieCommandHandler
     {
         private readonly MovieContext _context;
 
-        public RemoveMovieHandler(MovieContext context)
+        public RemoveMovieCommandHandler(MovieContext context)
         {
             _context = context;
         }

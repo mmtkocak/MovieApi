@@ -3,20 +3,21 @@ using MovieApi.Persistence.Context;
 
 namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.CategoryHandlers
 {
-    public class UpdateCategoryHandler
+    public class RemoveCategoryCommandHandler
     {
         private readonly MovieContext _context;
 
-        public UpdateCategoryHandler(MovieContext context)
+        public RemoveCategoryCommandHandler(MovieContext context)
         {
             _context = context;
         }
 
-        public async Task Handle(UpdateCategoryCommand command)
+        public async Task Handle(RemoveCategoryCommand command)
         {
             var value = await _context.Categories.FindAsync(command.CategoryId);
-            value.CategoryName = command.CategoryName;
+            _context.Categories.Remove(value);
             await _context.SaveChangesAsync();
         }
+
     }
 }
